@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
-                HabitDetailView()
+                detailHabitView()
             }
             .navigationTitle("Habit-tracking App")
             .toolbar{
@@ -29,6 +29,50 @@ struct ContentView: View {
                 AddHabitView(habits: habits)
             }
         }
+    }
+    func removeHabit(at offsets: IndexSet){
+        habits.items.remove(atOffsets: offsets)
+    }
+    
+    func detailHabitView() -> some View {
+        return ForEach(habits.items){ item in
+            NavigationLink{
+                Form{
+                    VStack(alignment: .leading, spacing: 0){
+                        Text(item.habit)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        Divider().frame(maxWidth: .infinity)
+                        Text(item.description)
+                            .padding(.vertical)
+                    }
+                }
+                .toolbar{
+                    Button{
+                        // do something
+                    } label: {
+                        Text("Done")
+                    }
+                }
+            } label: {
+                VStack{
+                    HStack(){
+                        VStack(alignment: .leading){
+                            Text(item.habit)
+                                .font(.headline)
+                                .padding(0.5)
+                            Text(item.description)
+                                .font(.caption)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 10, alignment: .leading)
+                        }
+                        Spacer()
+                        Text("\(item.totalCompleted)")
+                    }
+                }
+            }
+        }
+        .onDelete(perform: removeHabit)
     }
 }
 

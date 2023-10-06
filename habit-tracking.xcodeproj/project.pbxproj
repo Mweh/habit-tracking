@@ -14,7 +14,6 @@
 		CD884FF62ACD604F00B62B58 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD884FF52ACD604F00B62B58 /* AddHabitView.swift */; };
 		CD884FF82ACD64AA00B62B58 /* HabitsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD884FF72ACD64AA00B62B58 /* HabitsItem.swift */; };
 		CD884FFA2ACD652000B62B58 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD884FF92ACD652000B62B58 /* Habits.swift */; };
-		CD884FFC2ACD763D00B62B58 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD884FFB2ACD763D00B62B58 /* HabitDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		CD884FF52ACD604F00B62B58 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		CD884FF72ACD64AA00B62B58 /* HabitsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsItem.swift; sourceTree = "<group>"; };
 		CD884FF92ACD652000B62B58 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
-		CD884FFB2ACD763D00B62B58 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 			children = (
 				CD884FE72ACD5B9A00B62B58 /* habit_trackingApp.swift */,
 				CD884FE92ACD5B9A00B62B58 /* ContentView.swift */,
-				CD884FFB2ACD763D00B62B58 /* HabitDetailView.swift */,
 				CD884FF52ACD604F00B62B58 /* AddHabitView.swift */,
 				CD884FF72ACD64AA00B62B58 /* HabitsItem.swift */,
 				CD884FF92ACD652000B62B58 /* Habits.swift */,
@@ -151,7 +148,6 @@
 			files = (
 				CD884FEA2ACD5B9A00B62B58 /* ContentView.swift in Sources */,
 				CD884FFA2ACD652000B62B58 /* Habits.swift in Sources */,
-				CD884FFC2ACD763D00B62B58 /* HabitDetailView.swift in Sources */,
 				CD884FF82ACD64AA00B62B58 /* HabitsItem.swift in Sources */,
 				CD884FE82ACD5B9A00B62B58 /* habit_trackingApp.swift in Sources */,
 				CD884FF62ACD604F00B62B58 /* AddHabitView.swift in Sources */,

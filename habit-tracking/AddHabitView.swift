@@ -25,7 +25,6 @@ struct AddHabitView: View {
             .toolbar{
                 ToolbarItem{
                     Button("Save"){
-                        //                            habitNumber += 1
                         let habit = HabitsItem(habit: addTitle, description: addDescription, totalCompleted: totalCompleted)
                         habits.items.append(habit)
                         dismiss()
