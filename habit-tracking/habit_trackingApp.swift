@@ -13,7 +13,7 @@ struct habit_trackingApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(updatedHabit: sampleHabit)
+            ContentView()
         }
     }
 }
