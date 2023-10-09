@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct habit_trackingApp: App {
+    let sampleHabit = HabitsItem(habit: "Sample Habit", description: "This is a sample habit", totalCompleted: 0)
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(updatedHabit: sampleHabit)
         }
     }
 }
